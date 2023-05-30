@@ -267,7 +267,14 @@ $secondary_color: #010f1c;
 
 
     .boxf{
-
+        &:hover{
+            .icon6{
+                right: 20px;
+                opacity: 1;
+            }
+            
+          }
+          
         overflow: hidden;
         position: relative;
        .text6{
@@ -305,15 +312,115 @@ $secondary_color: #010f1c;
             text-align: center;
             transform: translateY(0%);
             opacity: 0;
-            transition: .1s;
+            bottom: 60px;
+            transition: .4s;
             overflow: hidden;
         }
 
         &:hover h4{
-            top: 330px;
-            
+            // top: 330px;
             opacity: 1;
+            bottom: 86px;
+        }
+        
+        .icon6{
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 30px;
+          right: 10px;
+          justify-content: space-between;
+          gap: 10px;
+          opacity: 0;
+          transition: 0.5s;
+          &:hover i{
+            background-color: #000;
+            color: #fff;
+          }
+      
+         
+          i{
+            background-color: #fff;
+            border: 1px solid #ECF2F7;
+            border-radius: 0%;
+            height: 26px;
+            width: 26px;
+            padding: 4px 4px;
+            transition: .6s;
+          }
         }
     }
 
 }
+
+.box8{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    &:hover img{
+        transform: scale(1.1);
+    }
+
+    margin-top: 6rem;
+    img{
+        width: 100%;
+        transition: .6s;
+    }
+
+    .a1{
+       font-size: 50px;
+       color: #010F1C;
+       text-decoration: none;
+      
+    }
+    .a2{
+        @extend .all-button;
+        color: #010F1C;
+        text-decoration: none;
+        font-size: 14px;
+        gap: 20px;
+        background-color: white;
+        transition: .6s;
+         &:hover {
+          background-color: #BD844C;
+         color: #ECF2F7;
+        }        
+    }
+
+    .text8{
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        gap: 60px;
+    }
+}
+.box9{
+    overflow: hidden;
+    width: 73%;
+    position: relative;    
+    margin-top: 6rem;
+    &:hover img{
+        transform: scale(1.1);
+    }
+    img{
+        width: 100%;
+        transition: .6s;
+    }
+    .text9{
+        left: 30px;
+        bottom: 40px;
+        position:absolute;
+    }
+   .a1{
+    font-size: 44px;
+    color: #fff;
+    text-decoration: none;
+   }
+   .a2{
+    font-size: 16px;
+    color: #ffff;
+    text-decoration: none;
+   }
+}
+
